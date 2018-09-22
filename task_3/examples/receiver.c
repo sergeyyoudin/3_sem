@@ -13,7 +13,7 @@ typedef struct msgbuf {
 } message_buf;
 
 
-main()
+int main()
 {
     int msqid;
     key_t key;
