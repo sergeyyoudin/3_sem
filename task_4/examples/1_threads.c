@@ -17,8 +17,7 @@ void* thread_stuff(void *arg)
     pthread_t id = pthread_self();
 
     for (i=0;i<0xFFFFFFFF;i++) {
-        if(pthread_equal(id,tid[0]))
-        {
+        if(pthread_equal(id,tid[0])) {
                 printf("1:thread %lu on iteration %lu\n", (unsigned long)id, i);
         } else {
                 printf("2:thread %lu on iteration %lu\n", (unsigned long)id, i);
@@ -32,8 +31,7 @@ int main(void)
     int i = 0;
     int err;
 
-    while(i < 2)
-    {
+    while(i < 2) {
         err = pthread_create(&(tid[i]), NULL, &thread_stuff, NULL);
         if (err != 0)
             printf("\ncan't create thread :[%s]", strerror(err));
