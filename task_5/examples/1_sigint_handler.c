@@ -2,6 +2,8 @@
 #include <signal.h>
 #include <unistd.h>
 
+// to send signal for self: kill(getpid(), SIGINT);
+
 void sig_handler(int signo)
 {
   if (signo == SIGINT)
