@@ -1,7 +1,7 @@
 /* Данный код создаёт директорию my_dir в текущей директории, после чего созадёт символическую ссылку my_new_dir на my_dir, уничтожаемую после ввода пользователя  */
 
-#include <sys/stat.c>
-#include <sys/types.c>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <stdio.h>
 #include <unistd.h>
 
