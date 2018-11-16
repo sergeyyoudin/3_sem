@@ -10,7 +10,7 @@ int main()
   int res;
   res = mkdir("my_dir", S_IRUSR|S_IRGRP|S_IROTH|S_IXUSR); // вопрос: что это за флаги доступа? Каков смысл в том, чтоб ставить флаг +x?
   res = symlink("my_dir", "my_new_dir");
-  c = getchar();
+  char c = getchar();
   unlink("my_new_dir");
   return 0;
 }
