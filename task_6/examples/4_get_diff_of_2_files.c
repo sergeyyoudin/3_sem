@@ -4,8 +4,8 @@
 
 int main()
 {
-        char* p;
-        p = system("diff file1.txt file2.txt");
-        printf("%s", p);
+        int res;
+        res = system("diff file1.txt file2.txt");
+        // use here dup2 to redirect file descriptor of stdout to your file
         return 0;
 }
