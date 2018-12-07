@@ -1,5 +1,5 @@
 /*
-** server.c -- a stream socket server demo
+** server.c -- a stream socket server demo from BGNet Tutorials (see bgnet/ directory)
 */
 
 #include <stdio.h>
